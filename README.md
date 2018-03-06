@@ -1,4 +1,4 @@
-#Documenting Performance Metrics
+# Documenting Performance Metrics
 
 During the course of user research into performance reporting and use business intelligence within the Food Standards Agency, one recurring theme encountered is users consistently find it challenging to locate a authoritative definition or reach a shared understanding of the metrics being used to report on performance.
 
