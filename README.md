@@ -59,13 +59,23 @@ The entire function of the metric purpose is to communicate just that as succinc
  
  ### Dimensions
  
- A dimension is simply a term for referring to the way in which you can "slice" a metric. A good rule of thumb is that if you could show the measure on a line or column chart, a dimension would be any appropriate way to dividing the data along the x-axis. The most common dimensions for a metrics are time and geography, but other dimensions are available.
+ A dimension is simply a term for referring to the way in which you can "slice" a metric. A good rule of thumb is that if you could show the measure on a line or column chart, a dimension would be any acceptable way to divide the data along the x-axis. The most common dimensions for a metrics are time and geography, but other dimensions are available.
  
- Dimensions should be clearly laid to show the name of the dimension, and all the categories within it. Where a category does not have an immediately obvious definition, you should endeavour to link out to a reference list which defines it. This can be common for geographical dimensions, as things like "region" can have multiple meanings. For example, the dimensions for our "Widgets per hour" metric might look like this;
+ Dimensions should be clearly laid out to show the name of the dimension, and all the categories within it. Where a category does not have an immediately obvious definition, you should endeavour to link out to a reference list which defines it. This can be common problem for geographical dimensions, as things like "region" can have multiple meanings. For example, the dimensions for our "Widgets per hour" metric might look like this;
  
  >#### Dimensions
  >**Time:** Hour, Day, Week, Month, Quarter, Calendar Year, Financial Year.  
- >**Geographic:** Factory, Area, Region, Country, World. _(Area and Region would be defined somewhere else for this company)_  
+ >**Geographic:** Factory, Area, Region, Country, World. _(Area and Region would be defined somewhere else for this company.)_  
  >**Staff Group:** Employee, Team, Shift.  
  
- _Note: Keep the language as plain as possible, it is tempting to use temporal rather than time, but all you're doing is increasing your own satisfaction._
+ _Note: Keep the language as plain as possible, it is tempting to use temporal rather than time, but all you're doing is increasing your satisfaction with your own vocabulary._
+ 
+ ### Aggregations and Averages
+ 
+ Make it clear when a metric can be aggregated or averaged, or when other functions such as "minimum", "maximum", or "count" can be applied to the results returned to the user.
+ 
+ >#### Aggregations and Averages
+ >**Aggregations:** Minimum, Maximum.  
+ >**Averages:** Mean (default), Median.  
+ 
+ 
