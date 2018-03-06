@@ -47,10 +47,25 @@ The entire function of the metric purpose is to communicate just that as succinc
 
 ### Calculation
 
- If the metric is calculated in any way, it should be made clear here, preferrably in plain English. Some more complex metrics may require some mathematical notation, you shouldn't be afraid to use that if necessary, credit the user with the gumption to understand it. :)
+ If the metric is calculated in any way, it should be made clear here, preferrably in plain English. Some more complex metrics may require some mathematical notation, you shouldn't be afraid to use that if necessary, credit the user with the gumption to understand it, but be prepared to rewrite it if you are asked to make it clearer.
  
  >Total number of widgets made in reporting period / total number of hours in reporting period
  
  or 
  
  ![Equation](https://github.com/adamlocker/Metric_Templating/blob/master/Images/Equation.png "Equation example")
+ 
+ _Note: Calculation is not the same thing as aggregation or averaging, which is covered later on._
+ 
+ ### Dimensions
+ 
+ A dimension is simply a term for referring to the way in which you can "slice" a metric. A good rule of thumb is that if you could show the measure on a line or column chart, a dimension would be any appropriate way to dividing the data along the x-axis. The most common dimensions for a metrics are time and geography, but other dimensions are available.
+ 
+ Dimensions should be clearly laid to show the name of the dimension, and all the categories within it. Where a category does not have an immediately obvious definition, you should endeavour to link out to a reference list which defines it. This can be common for geographical dimensions, as things like "region" can have multiple meanings. For example, the dimensions for our "Widgets per hour" metric might look like this;
+ 
+ #### Dimensions
+ *Time:* Hour, Day, Week, Month, Quarter, Calendar Year, Financial Year.
+ *Geographic:* Factory, Area, Region, Country, World. _(Area and Region would be defined somewhere else for this company)_ 
+ *Staff Group:* Employee, Team, Shift.
+ 
+ 
