@@ -1,5 +1,4 @@
-Templating Metrics
-==================
+#Documenting Performance Metrics
 
 During the course of user research into performance reporting and use business intelligence within the Food Standards Agency, one recurring theme encountered is users consistently find it challenging to locate a authoritative definition or reach a shared understanding of the metrics being used to report on performance.
 
@@ -9,11 +8,18 @@ This document has been written to try to help solve that problem by providing a 
 
 ## Metric Name
 
-Rather obviously, the metric definition should start with the metric name. But not all metric name are created equal, when naming metrics you should consider the following:
+Rather obviously, the metric definition should start with the name. But not all metric name are created equal, when naming metrics new metrics you should consider the following:
  
  - Is there already an established name for this metric? If there is, use that.
  - Use plain English, and avoid the use of acronyms with metric names, all you will achieve is to make unfamiliar users look up a second thing.
  - In the context of the domain, does the shortest possible name have an obvious meaning? i.e. "value for money" is a quite generic name, but when considered within the domain in which it sits, does it become obvious? If not, you probably need a more specific name.
  - Try to avoid referring to specific dimensions directly in the metric name, unless they are always cut by that specific interval. For example, "widgets per hour" is not a good metric name if users can also cut the measure by other time intervals (i.e widgets per month), but is useful if even when you do, you still see the same value. i.e. Running the widgets per hour report grouped by month and the value is still widgets per hour, broken down by month.
  - Be mindful that metrics frequently appear on charts or dashboards, where screen estate is at a premium, so brevity in metric names is preferable. Longer names frequently end up abbreviated into incomprehensible acronyms, which then themselves become embedded into the language of an organsiation, and acronyms make unfamiliar users look up a second thing.
- - Avoid using numbers in metric names where possible.
+ - Avoid using numbers in metric names.
+ 
+ When documenting existing metrics consideration should be given to changing the metric name if it fails to meet one or more of the style criteria, but only if the timing is appropriate. For example, as part of a wider review of performance within a specific domain or the redevelopment of a business process or service. When documenting well established metrics for the first time, the original names should be used to meet users' expectation.
+ 
+ ## Metric Purpose
+ 
+ Front and centre of any metric definition should be the purpose of that metric. Most well defined metrics are clear about what is being measured, and what action should or could be taken based on that measurement. For example;
+> "Hourly production rate shows the number average number of widgets made per hour during the day. The minimum number of widgets per hour will be set by the planning and performance team, if the rate of production falls below that value, production line managers should contact the planning and performance team and ask them to reprofile production resources."
