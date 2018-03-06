@@ -86,3 +86,11 @@ or
  > **Target**: Average to exceed 9.4 widgets per hour for this factory (monthly, quarterly or yearly).  
  > **Thresholds:** The lower acceptable limit is 5.8 widgets per hour, there is no upper limit.  
  > **Business Logic:** This metric falling below the lower threshold in-day will automatically notify the resourcing team. This metric falling below the lower threshold over a week will trigger an early monthly review.  
+ 
+## Strengths and Weaknesses
+
+ It is important to be honest with users about the merits and the weaknesses of any given metric, particualrly those used to measure performance of an individual or team. Users will quickly work out ways in which they can manipulate metrics to their advantage (or others' disadvantage) when too much emphasis is placed on meeting a target. Whether you like it or not, any metric with a target will drive the behaviour of those being measured, for good or for bad, so you should be sure to take a holistic view of overall performance rather than relying on only one or two key performance indicators. For example;
+ 
+ > #### Strengths and Weaknesses
+ > **Strengths:** This metric is easy to understand, and measurable at a very granular level, meaning in-day or even in-hour adjustments can be made, think of it much like the speedomoeter on your car.
+ > **Weaknesses:** Like all mean average metrics, this can be susceptible to statistical outliers skewing the result. Where possible you should view the metric over the largest possible timeframe in order to mitigate this.
