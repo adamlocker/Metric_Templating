@@ -83,6 +83,6 @@ or
  This is particularly important for key performance indicators, and any metric that is listed as a KPI must have this section completed, otherwise it cannot reliably be considered one. Targets should ideally be a hard number, something to aim for but can also be a range where that is important. It is alos important to specify the minimum interval over which the target applies as frequently measuring a KPI on an hourly or even daily basis can be counterproductive and a longer timeframe should be used. Thresholds should be considered more advisory and perhaps include in the definition a number of ranges. Business logic should make it clear when automatic processes will activate based on targets or thresholds being missed or exceeded. For example;
  
  > #### Targets, Thresholds and Business Logic
- > **Target**: Average to exceed 9.4 widgets per hour for this factory (monthly, quarterly or yearly).
- > **Thresholds:** The lower acceptable limit is 5.8 widgets per hour, there is no upper limit.
- > **Business Logic:** This metric falling below the lower threshold in-day will automatically notify the resourcing team. This metric falling below the lower threshold over a week will trigger an early monthly review.
+ > **Target**: Average to exceed 9.4 widgets per hour for this factory (monthly, quarterly or yearly).  
+ > **Thresholds:** The lower acceptable limit is 5.8 widgets per hour, there is no upper limit.  
+ > **Business Logic:** This metric falling below the lower threshold in-day will automatically notify the resourcing team. This metric falling below the lower threshold over a week will trigger an early monthly review.  
