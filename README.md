@@ -19,6 +19,21 @@ Rather obviously, the metric definition should start with the name. But not all 
  
  When documenting existing metrics consideration should be given to changing the metric name if it fails to meet one or more of the style criteria, but only if the timing is appropriate. For example, as part of a wider review of performance within a specific domain or the redevelopment of a business process or service. When documenting well established metrics for the first time, the original names should be used to meet users' expectation.
  
+ ### Key Performance Indicator
+ 
+ There are many articles, blogs, guides, and even books on identifying, selecting, and developing key performance indicators. We're not looking to cover that here. As far as documenting your KPI's goes, what is imprortant is that they are easily identifiable and that their purpose is clearly tied to strategic objectives and explained as such. Depending on how you choose to communicate your metrics you could do any of the following;
+ 
+ #### Metric Name *(KPI)*
+ 
+ or
+ 
+ #### Metric Name
+ ##### _Key Performance Indicator_
+ 
+ Or if you're feeling adventurous why not use a small inline graphic if your chosen publishing platform supports it (this is one of the reasons we like github, and this was a good excuse to draw some chevrons, I really like chevrons.)
+ 
+ ![KPI](https://github.com/adamlocker/Metric_Templating/blob/master/images/KPI.png)
+ 
  ## Metric Purpose
  
  Front and centre of any metric definition should be the purpose of that metric. Most well defined metrics are clear about what is being measured, and what action should or could be taken based on that measurement. For example;
