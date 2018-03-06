@@ -63,9 +63,9 @@ The entire function of the metric purpose is to communicate just that as succinc
  
  Dimensions should be clearly laid to show the name of the dimension, and all the categories within it. Where a category does not have an immediately obvious definition, you should endeavour to link out to a reference list which defines it. This can be common for geographical dimensions, as things like "region" can have multiple meanings. For example, the dimensions for our "Widgets per hour" metric might look like this;
  
- #### Dimensions
- **Time:** Hour, Day, Week, Month, Quarter, Calendar Year, Financial Year.  
- **Geographic:** Factory, Area, Region, Country, World. _(Area and Region would be defined somewhere else for this company)_  
- **Staff Group:** Employee, Team, Shift.  
+ >#### Dimensions
+ >**Time:** Hour, Day, Week, Month, Quarter, Calendar Year, Financial Year.  
+ >**Geographic:** Factory, Area, Region, Country, World. _(Area and Region would be defined somewhere else for this company)_  
+ >**Staff Group:** Employee, Team, Shift.  
  
  _Note: Keep the language as plain as possible, it is tempting to use temporal rather than time, but all you're doing is increasing your own satisfaction._
