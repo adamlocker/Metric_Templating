@@ -32,7 +32,7 @@ Rather obviously, the metric definition should start with the name. But not all 
  
  Or if you're feeling adventurous why not use a small inline graphic if your chosen publishing platform supports it (this is one of the reasons we like github, and this was a good excuse to draw some chevrons, I really like chevrons.)
  
- ![KPI](https://github.com/adamlocker/Metric_Templating/blob/master/images/KPI.png)
+ ![KPI](https://github.com/adamlocker/Metric_Templating/blob/master/Images/KPI.png "Key Performance Indicator")
  
  ## Metric Purpose
  
