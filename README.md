@@ -12,7 +12,7 @@ The most important consideration for performance metric documentation is version
 
 ## Metric Name
 
-Rather obviously, the metric definition should start with the name. But not all metric name are created equal, when naming metrics new metrics you should consider the following:
+Rather obviously, the metric definition should start with the name. When naming metrics new metrics you should consider the following;
  
  - Is there already an established name for this metric? If there is, use that.
  - Use plain English, and avoid the use of acronyms with metric names, all you will achieve is to make unfamiliar users look up a second thing.
@@ -21,11 +21,11 @@ Rather obviously, the metric definition should start with the name. But not all 
  - Be mindful that metrics frequently appear on charts or dashboards, where screen estate is at a premium, so brevity in metric names is preferable. Longer names frequently end up abbreviated into incomprehensible acronyms, which then themselves become embedded into the language of an organsiation, and acronyms make unfamiliar users look up a second thing.
  - Avoid using numbers in metric names.
  
- When documenting existing metrics consideration should be given to changing the metric name if it fails to meet one or more of the style criteria, but only if the timing is appropriate. For example, as part of a wider review of performance within a specific domain or the redevelopment of a business process or service. When documenting well established metrics for the first time, the original names should be used to meet users' expectation.
+When documenting existing metrics consideration should be given to changing the metric name if it fails to meet one or more of the style criteria, but only if the timing is appropriate. For example, as part of a wider review of performance within a specific domain or the redevelopment of a business process or service. When documenting well established metrics for the first time, the original names should be used to meet users' expectation.
  
 ### Key Performance Indicator
  
- There are many articles, blogs, guides, and even books on identifying, selecting, and developing key performance indicators. We're not looking to cover that here. As far as documenting your KPI's goes, what is imprortant is that they are easily identifiable and that their purpose is clearly tied to strategic objectives and explained as such. Depending on how you choose to communicate your metrics you could do any of the following;
+There are many articles, blogs, guides, and even books on identifying, selecting, and developing key performance indicators. We're not looking to cover that here. As far as documenting your KPI's goes, what is imprortant is that they are easily identifiable and that their purpose is clearly tied to strategic objectives and explained as such. Depending on how you choose to communicate your metrics you could do any of the following;
  
  Metric Name *(KPI)*
  
@@ -40,42 +40,47 @@ Rather obviously, the metric definition should start with the name. But not all 
  
 ## Metric Purpose
  
- Front and centre of any metric definition should be the purpose of that metric. Most well defined metrics are clear about what is being measured, and what action should or could be taken based on that measurement. For example;
+Front and centre of any metric definition should be the purpose of that metric. Most well defined metrics are clear about what is being measured, and what action should or could be taken based on that measurement. For example;
 > "Hourly production rate shows the number average number of widgets made per hour during the day. The minimum number of widgets per hour will be set by the planning and performance team, if the rate of production falls below that value, production line managers should contact the planning and performance team and ask them to reprofile production resources."
 
 The entire function of the metric purpose is to communicate just that as succinctly as possible. Keep it brief.
 
 ### Calculation
 
- If the metric is calculated in any way, it should be made clear here, preferrably in plain English. Some more complex metrics may require some mathematical notation, you shouldn't be afraid to use that if necessary, credit the user with the gumption to understand it, but be prepared to rewrite it if you are asked to make it clearer.
+If the metric is calculated in any way, it should be made clear here, preferrably in plain English. Some more complex metrics may require some mathematical notation, you shouldn't be afraid to use that if necessary, credit the user with the gumption to understand it, but be prepared to rewrite it if you are asked to make it clearer.
  
  >Total number of widgets made in reporting period / total number of hours in reporting period
  
- or 
+or 
  
  ![Equation](https://github.com/adamlocker/Metric_Templating/blob/master/Images/Equation.png "Equation example")
  
  _Note: Calculation is not the same thing as aggregation or averaging, which is covered later on._
  
- ### Dimensions
+## Dimensions
  
  A dimension is simply a term for referring to the way in which you can "slice" a metric. A good rule of thumb is that if you could show the measure on a line or column chart, a dimension would be any acceptable way to divide the data along the x-axis. The most common dimensions for a metrics are time and geography, but other dimensions are available.
  
  Dimensions should be clearly laid out to show the name of the dimension, and all the categories within it. Where a category does not have an immediately obvious definition, you should endeavour to link out to a reference list which defines it. This can be common problem for geographical dimensions, as things like "region" can have multiple meanings. For example, the dimensions for our "Widgets per hour" metric might look like this;
  
- >#### Dimensions
+ > #### Dimensions
  >**Time:** Hour, Day, Week, Month, Quarter, Calendar Year, Financial Year.  
  >**Geographic:** Factory, Area, Region, Country, World. _(Area and Region would be defined somewhere else for this company.)_  
  >**Staff Group:** Employee, Team, Shift.  
  
  _Note: Keep the language as plain as possible, it is tempting to use temporal rather than time, but all you're doing is increasing your satisfaction with your own vocabulary._
  
- ### Aggregations and Averages
+## Functions (Aggregations) and Averages
  
- Make it clear when a metric can be aggregated or averaged, or when other functions such as "minimum", "maximum", or "count" can be applied to the results returned to the user.
+ Make it clear when a metric can be aggregated or averaged, or when other functions such as "minimum", "maximum", or "count" can be applied to the results returned to the user. If the metric is natively reported as an average, you should make it clear whether that is the mean, median or mode, even if there is only one average used.
  
- >#### Aggregations and Averages
- >**Aggregations:** Minimum, Maximum.  
+ > #### Aggregations and Averages  
+ >**Functions:** Minimum, Maximum.  
  >**Averages:** Mean (default), Median.  
  
+## Targets, Thresholds, and Business Logic
+
+ This is particularly important for key performance indicators, and any metric that is listed as a KPI must have this section completed, otherwise it cannot reliably be considered one. Targets should ideally be a hard number, something to aim for but can also be a range where that is important. Thresholds should be considered more advisory and perhaps include in the definition a number of ranges. Business logic should make it clear when automatic processes will activate based on targets or thresholds being missed or exceeded. For example;
+ 
+ > #### Targets, Thresholds and Business Logic
  
