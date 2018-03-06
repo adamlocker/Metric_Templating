@@ -6,6 +6,10 @@ Looking around for well-established methods by which metrics should be templated
 
 This document has been written to try to help solve that problem by providing a template by which existing and new performance metrics can be documented. By laying out the key characteristics of a performance metric in a consistent way it is hoped that users will gain a better understanding of individual metrics, how metrics relate to each other, and the relative strengths and weaknesses of using any given metric. In addition, by creating a consistent view, it may be easier for users to understand that they are looking at a metric definition and pull out the pertinent information they need more quickly. This is really about the metadata of metrics, with a splash of style guide particularly for users within The Agency, others users may already have established style guides for developing metrics.
 
+### Publishing Performance Metrics
+
+The most important consideration for performance metric documentation is version control. The user must always be confident that what they are looking at is the most up to date version. We're pretty agnostic about how you do that, but as you can probably tell we're definite fans of github as markdown is really easy to get to grips with, but you could use a wiki or an intranet. Just please, please, don't use a fixed file, and definitely not PDF.
+
 ## Metric Name
 
 Rather obviously, the metric definition should start with the name. But not all metric name are created equal, when naming metrics new metrics you should consider the following:
