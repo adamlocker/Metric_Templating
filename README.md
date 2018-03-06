@@ -31,8 +31,8 @@ Rather obviously, the metric definition should start with the name. But not all 
  
  or
  
- #### Metric Name
- ##### _Key Performance Indicator_
+ *Metric Name*
+_Key Performance Indicator_
  
  Or if you're feeling adventurous why not use a small inline graphic if your chosen publishing platform supports it (this is one of the reasons we like github, and this was a good excuse to draw some chevrons, I really like chevrons. You'll probably want to go smaller.)
  
@@ -42,3 +42,5 @@ Rather obviously, the metric definition should start with the name. But not all 
  
  Front and centre of any metric definition should be the purpose of that metric. Most well defined metrics are clear about what is being measured, and what action should or could be taken based on that measurement. For example;
 > "Hourly production rate shows the number average number of widgets made per hour during the day. The minimum number of widgets per hour will be set by the planning and performance team, if the rate of production falls below that value, production line managers should contact the planning and performance team and ask them to reprofile production resources."
+
+There's 
