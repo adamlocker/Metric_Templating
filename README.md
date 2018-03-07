@@ -59,8 +59,7 @@ The entire function of this section is to communicate the purpose as succinctly 
 
 If the metric is calculated in any way, it should be made clear here, preferably in plain language. Some more complex metrics may require mathematical notation, you shouldn't be afraid to use that if necessary. Credit the user with the gumption to understand it, but be prepared to rewrite it if you are asked to make it clearer. For example;
  
- > **Calculation**
- > Total number of widgets made in reporting period / total number of hours in reporting period
+ > Total number of widgets made in reporting period / total number of hours in reporting period  
  
 or 
  
@@ -74,7 +73,6 @@ A dimension is simply a term for referring to the way in which you can "slice" a
  
 Dimensions should be clearly laid out to show the name of the dimension, and all the categories within it. Where a category does not have an immediately obvious definition, you should endeavour to link out to a reference list which defines it. This can be common problem for geographical dimensions, as things like "region" can have multiple meanings. For example, the dimensions for our "Widgets per hour" metric might look like this;
  
- > #### Dimensions
  >**Time:** Hour, Day, Week, Month, Quarter, Calendar Year, Financial Year.  
  >**Geographic:** Factory, Area, Region, Country, World. _(Area and Region would be defined somewhere else for this company.)_  
  >**Staff Group:** Employee, Team, Shift.  
@@ -85,7 +83,6 @@ _Note: Keep the language as plain as possible, it is tempting to use temporal ra
  
 Make it clear when a metric can be aggregated or averaged, or when other functions such as "minimum", "maximum", or "count" can be applied to the results returned to the user. If the metric is natively reported as an average, you should make it clear whether that is the mean, median or mode, even if there is only one average used.
  
- > #### Functions, Aggregations, and Averages  
  >**Functions:** Minimum, Maximum.  
  >**Aggregations:** This metric should not be aggregated.  
  >**Averages:** Mean (default), Median.  
@@ -94,7 +91,6 @@ Make it clear when a metric can be aggregated or averaged, or when other functio
 
 This is particularly important for key performance indicators, and any metric that is listed as a KPI must have this section, otherwise it cannot reliably be considered a key performance indicator. Targets are ideally a hard number, something to aim for, but can also be a range where that is important. It is also important to specify the minimum interval over which the target applies, as frequently measuring a KPI on an hourly or even daily basis can become counterproductive and a longer timeframe should be used to mitigate that tendency. Thresholds should be considered advisory and perhaps include in the definition several ranges. Business logic should make it clear when a specific action will happen based on targets or thresholds being missed or exceeded. For example;
  
- > #### Targets, Thresholds and Business Logic
  > **Target**: Average to exceed 9.4 widgets per hour for this factory (monthly, quarterly or yearly).  
  > **Thresholds:** The lower acceptable limit is 5.8 widgets per hour, there is no upper limit.  
  > **Business Logic:** Falling below the lower threshold in-day will automatically notify the resourcing team. This metric falling below the lower threshold over a week will trigger an early monthly review.  
@@ -103,7 +99,6 @@ This is particularly important for key performance indicators, and any metric th
 
 It is important to be honest with users about the strengths and weaknesses of any given metric, particularly those used to measure performance of an individual or team and against which targets are set. Users will quickly work out ways in which they can manipulate metrics to their advantage (or others' disadvantage) when too much emphasis is placed on meeting (or not missing) a target. Whether you like it or not, any metric with a target will drive the behaviour of those being measured, for good or for bad, so you should be sure to take a holistic view of overall performance rather than relying on only one or two key performance indicators. For example;
  
- > #### Strengths and Weaknesses
  > **Strengths:** This metric is easy to understand, and measurable at a very granular level, meaning in-day or even in-hour adjustments can be made, think of it much like the speedometer on your car.  
  > **Weaknesses:** Like all mean average metrics, this can be susceptible to statistical outliers skewing the result. Where possible you should view the metric over the largest possible timeframe to mitigate this.  
  
@@ -111,7 +106,6 @@ It is important to be honest with users about the strengths and weaknesses of an
 
 Using the information about the domain and theme of the metric should make this bit easy. It is important to only list other metrics which are closely related to this metric, have a large impact on, or are significantly impacted by changes to it. You should explain the relationships using plain language, but highlight the specific metric names in some way, preferably with a link to the definition for that metric. For example;
  
- > #### Related Metrics
  > This metric is closely related to **Widgets per Full Time Equivalent**, and can be heavily impacted by the metric **Raw Materials Shortfall Percentage**.
  
 _Imagine the bold metric names are links to their definitions, just imagine!_
@@ -120,17 +114,15 @@ _Imagine the bold metric names are links to their definitions, just imagine!_
 
 When documenting metrics you should be clear about where the data comes from, but not in a technical way. You should make it clear if the data is collected by an automated or validated process or by a manual one. If good technical documentation exists (i.e. schema for the one database a metric uses) then you can consider providing a link to it along the lines of "for technical documentation related to this metric please see **URL**. A List of data sources is fine, but for complex processes a diagram can be worthwhile, especially when the point in the process at which the data is captured is important. For example;
 
- > #### Data Sources
  > All the data to calculate this metric comes from our automated production line software, BERTHA. Lovely BERTHA.
 
 ## Reference Data
 
 Reference data will most frequently be the data used to dimension the metric such as a reference list which describes the geographic arrangement of an organisation, or even a staff list. When documenting metrics you should never assume that the reference data is obvious. By being explicit about where it has come from makes seeing the links between metrics easier. Where the reference data comes from an internal system, such as a HR system for a list of employees, you should reference that system explicitly. Where the data comes from a publicly available source, such as a register, you should provide a link to that register. For example;
 
- > #### Reference Data
  > This metric uses reference data on factory locations from our **list of production sites, areas, and regions**, country codes from the [GOV.UK Country Register](https://country.register.gov.uk/), and employee data from our HR system, **RAMBO**.
 
-#Completed Example
+#Complete Example
 
 Putting this all together, our metric documentation for **Hourly Production Rate** might look like this:
 
@@ -139,42 +131,42 @@ Putting this all together, our metric documentation for **Hourly Production Rate
 ## Hourly Production Rate
 ![KPI](https://github.com/adamlocker/Metric_Templating/blob/master/Images/KPISmall.png "Key Performance Indicator")
 
-#### Domain and Themes
+### Domain and Themes
 **Domain:** Production  
 **Themes:** Profitability, Output, Efficiency  
 
-#### Metric Purpose
+### Metric Purpose
 Hourly production rate shows the number average number of widgets made per hour during the day. The minimum number of widgets per hour will be set by the planning and performance team, if the rate of production falls below that value, production line managers should contact the planning and performance team and ask them to re-profile production resources.
 
-#### Calculation
+### Calculation
 ![Equation](https://github.com/adamlocker/Metric_Templating/blob/master/Images/Equation.png "Equation example")
 
-#### Dimensions
+### Dimensions
 **Time:** Hour, Day, Week, Month, Quarter, Calendar Year, Financial Year.  
 **Geographic:** Factory, Area, Region, Country, World. _(Area and Region would be defined somewhere else for this company.)_  
 **Staff Group:** Employee, Team, Shift.
 
-#### Functions, Aggregations, and Averages  
+### Functions, Aggregations, and Averages  
 **Functions:** Minimum, Maximum.  
 **Aggregations:** This metric should not be aggregated.  
 **Averages:** Mean (default), Median.  
 
-#### Targets, Thresholds and Business Logic
+### Targets, Thresholds and Business Logic
 **Target**: Average to exceed 9.4 widgets per hour for this factory (monthly, quarterly or yearly).  
 **Thresholds:** The lower acceptable limit is 5.8 widgets per hour, there is no upper limit.  
 **Business Logic:** Falling below the lower threshold in-day will automatically notify the resourcing team. This metric falling below the lower threshold over a week will trigger an early monthly review.  
 
-#### Strengths and Weaknesses
+### Strengths and Weaknesses
 **Strengths:** This metric is easy to understand, and measurable at a very granular level, meaning in-day or even in-hour adjustments can be made, think of it much like the speedometer on your car.  
 **Weaknesses:** Like all mean average metrics, this can be susceptible to statistical outliers skewing the result. Where possible you should view the metric over the largest possible timeframe to mitigate this.  
 
-#### Related Metrics
+### Related Metrics
 This metric is closely related to **Widgets per Full Time Equivalent**, and can be heavily impacted by the metric **Raw Materials Shortfall Percentage**.
 
-#### Data Sources
+### Data Sources
 All the data to calculate this metric comes from our automated production line software, BERTHA. Lovely BERTHA.
 
-#### Reference Data
+### Reference Data
 This metric uses reference data on factory locations from our **list of production sites, areas, and regions**, country codes from the [GOV.UK Country Register](https://country.register.gov.uk/), and employee data from our HR system, **RAMBO**.
 
 ----
