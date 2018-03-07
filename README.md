@@ -36,7 +36,16 @@ There are many articles, blogs, guides, and even books on identifying, selecting
  
  Or if you're feeling adventurous why not use a small inline graphic if your chosen publishing platform supports it (this is one of the reasons we like github, and this was a good excuse to draw some chevrons, I really like chevrons. You'll probably want to go smaller.)
  
- ![KPI](https://github.com/adamlocker/Metric_Templating/blob/master/Images/KPI.png "Key Performance Indicator")
+ ![KPI](https://github.com/adamlocker/Metric_Templating/blob/master/Images/KPI.png "Key Performance Indicator")  
+
+### Domain and Theme
+ 
+ In this section you should make it clear the domain(s) to which the metric is applied. These should be listed by strength of association rather than another method of sorting such as alphabetical. You should also categorise the metric by an appropriate theme or themes. Ideally, the avaiable themes should be a centrally controlled vocabulary in order to limit the overall number of terms and avoid ambiguity, such as "Finance" and "Financial" being used interchangably.
+ 
+ It is important to keep domains and themes distinct. Domains are frequently expressed by business area or functions that the business orgnanises itself by, themes should be able to be used across domains. For example:
+ 
+ > **Domain:** Production
+ > **Themes:** Profitability, Output, Efficiency
  
 ## Metric Purpose
  
@@ -94,3 +103,15 @@ or
  > #### Strengths and Weaknesses
  > **Strengths:** This metric is easy to understand, and measurable at a very granular level, meaning in-day or even in-hour adjustments can be made, think of it much like the speedomoeter on your car.  
  > **Weaknesses:** Like all mean average metrics, this can be susceptible to statistical outliers skewing the result. Where possible you should view the metric over the largest possible timeframe in order to mitigate this.  
+ 
+## Related Metrics
+
+ 
+
+## Data Sources
+
+## Reference Data
+
+#Completed Example
+
+
