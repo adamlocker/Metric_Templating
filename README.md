@@ -1,6 +1,6 @@
 # Documenting Performance Metrics
 
-When completing user research about performance reporting and the use of business intelligence within the Food Standards Agency, one recurring theme discovered was that users consistently find it challenging to locate an authoritative definition or reach a shared understanding of the metrics used to measure performance.
+When completing user research about performance reporting and the use of business intelligence within the Food Standards Agency, one recurring theme discovered was that users sometimes find it challenging to locate an authoritative definition of the metrics used to measure performance. Like a dictionary ofr metrics, a mectionary if you like.
 
 Looking around for well-established methods by which metrics should be templated TO communicate their function to users, I found very little. A considerable amount has been written about designing metrics, evaluating their effectiveness, and deep dives into some of the most common performance metrics (particularly metrics about digital services) but almost nothing about communicating them to users. Whilst one of the strengths of a good performance metric is that it is somewhat self-evident, as processes and services become more complex, so does understanding them using only a handful of basic performance metrics.
 
