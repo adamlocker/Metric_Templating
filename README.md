@@ -44,8 +44,8 @@ There are many articles, blogs, guides, and even books on identifying, selecting
  
  It is important to keep domains and themes distinct. Domains are frequently expressed by business area or functions that the business orgnanises itself by, themes should be able to be used across domains. For example:
  
- > **Domain:** Production
- > **Themes:** Profitability, Output, Efficiency
+ > **Domain:** Production  
+ > **Themes:** Profitability, Output, Efficiency  
  
 ## Metric Purpose
  
@@ -64,7 +64,7 @@ or
  
  ![Equation](https://github.com/adamlocker/Metric_Templating/blob/master/Images/Equation.png "Equation example")
  
- _Note: Calculation is not the same thing as aggregation or averaging, which is covered later on._
+ _Note: Calculation is not the same as aggregation or averaging, which is covered later on._
  
 ## Dimensions
  
@@ -79,11 +79,11 @@ or
  
  _Note: Keep the language as plain as possible, it is tempting to use temporal rather than time, but all you're doing is increasing your satisfaction with your own vocabulary._
  
-## Functions (Aggregations) and Averages
+## Functions, Aggregations, and Averages
  
  Make it clear when a metric can be aggregated or averaged, or when other functions such as "minimum", "maximum", or "count" can be applied to the results returned to the user. If the metric is natively reported as an average, you should make it clear whether that is the mean, median or mode, even if there is only one average used.
  
- > #### Aggregations and Averages  
+ > #### Fucntions, Aggregations, and Averages  
  >**Functions:** Minimum, Maximum.  
  >**Averages:** Mean (default), Median.  
  
@@ -106,8 +106,11 @@ or
  
 ## Related Metrics
 
+ Using the information about the domain and theme of the metric should make this bit easy. It is important to only list other metrics which are closely related to this metric, have a large impact on, or are significantly impacted by changes to it. You should explain the reationships using plain language, but highlight the specific metric names in some way, preferably with a link to the definition for that metric. For example;
  
-
+ > #### Related Metrics
+ > This metric is closely related to **Widgets per Full Time Equivalent**, and can be heavily impacted by the metric **Raw Materials Shortfall Percentage**.
+ 
 ## Data Sources
 
 ## Reference Data
