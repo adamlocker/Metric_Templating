@@ -114,10 +114,31 @@ Using the information about the domain and theme of the metric should make this 
  > #### Related Metrics
  > This metric is closely related to **Widgets per Full Time Equivalent**, and can be heavily impacted by the metric **Raw Materials Shortfall Percentage**.
  
-_Imagine the bold metric names are links to their definitions_
+_Imagine the bold metric names are links to their definitions, just imagine!_
  
 ## Data Sources
 
+When documenting metrics you should be clear about where the data comes from, but not in a technical way. You should make it clear if the data is collected by an automated or validated process or by a manual one. If good technical documentation exists (i.e. schema for the one database a metric uses) then you can consider providing a link to it along the lines of "for technical documentation related to this metric please see **URL**. A List of data sources is fine, but for complex processes a diagram can be really worthwhile, especially when the point in the process at which the data is captured is important. For example;
+
+ > #### Data Sources
+ > All of the data to calculate this metric comes from our automated production line software, BERTHA. Lovely BERTHA.
+
 ## Reference Data
 
+Reference data will most frequently be the data used to dimension the metric such as a refernce list which describes the geographic arrangement of an organisation, or even a staff list. When documenting metrics you should never assume that the reference data is obvious. By being explicit about where it has come from makes seeing the links between metrics easier. Where the reference data comes from an internal system, such as a HR system for a list of employees, you should reference that system explicitly. Where the data comes from a publicly available source, such as a register, you should provide a link to that register. For example;
+
+ > #### Reference Data
+ > This metric uses reference data on factory locations from our **list of production sites, areas, and regions**, country codes from the [GOV.UK Country Register](https://country.register.gov.uk/), and employee data from our HR system, **RAMBO**.
+
 #Completed Example
+
+Putting this all together, our metric documentation for **Hourly Procution Rate** might look like this:
+
+----
+
+## Hourly Production Rate
+![KPI](https://github.com/adamlocker/Metric_Templating/blob/master/Images/KPISmall.png "Key Performance Indicator")
+
+### Domain and Themes
+**Domain:** Production  
+**Themes:** Profitability, Output, Efficiency  
