@@ -164,7 +164,7 @@ Hourly production rate shows the number average number of widgets made per hour 
 This metric is closely related to **Widgets per Full Time Equivalent**, and can be heavily impacted by the metric **Raw Materials Shortfall Percentage**.
 
 ### Data Sources
-All the data to calculate this metric comes from our automated production line software, BERTHA. Lovely BERTHA.
+All the data to calculate this metric comes from our automated production line software, **BERTHA**. Lovely **BERTHA**.
 
 ### Reference Data
 This metric uses reference data on factory locations from our **list of production sites, areas, and regions**, country codes from the [GOV.UK Country Register](https://country.register.gov.uk/), and employee data from our HR system, **RAMBO**.
